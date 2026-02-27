@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | LittleBites</title>
+  <meta name="description" content="Contact LittleBites." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Sari la continut</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Navigatie principala">
+        <a class="brand" href="index.html">
+          <strong>LittleBites</strong>
+          <span>Retete sanatoase pentru bebelusi si copii mici</span>
+        </a>
+        <div class="navlinks">
+          <a href="index.html">Acasa</a>
+          <a href="recipes.html">Retete</a>
+          <a href="about.html">Despre</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container" style="max-width:840px;">
+      <h1>Contact</h1>
+      <p class="lead">Poti pune aici un email sau un formular simplu (fara backend, doar link mailto).</p>
+
+      <div class="box">
+        <h2>Email</h2>
+        <p><a href="mailto:contact@littlebites.example">contact@littlebites.example</a></p>
+
+        <h2 style="margin-top:16px;">Sugestii</h2>
+        <p style="color:var(--muted);">
+          Daca vrei formular real (care trimite email), pentru site static ai optiuni ca Netlify Forms sau Formspree.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> LittleBites.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

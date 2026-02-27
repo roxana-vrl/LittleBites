@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Despre | LittleBites</title>
+  <meta name="description" content="Despre LittleBites: retete baby-friendly in romana." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Sari la continut</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Navigatie principala">
+        <a class="brand" href="index.html">
+          <strong>LittleBites</strong>
+          <span>Retete sanatoase pentru bebelusi si copii mici</span>
+        </a>
+        <div class="navlinks">
+          <a href="index.html">Acasa</a>
+          <a href="recipes.html">Retete</a>
+          <a href="about.html" aria-current="page">Despre</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container" style="max-width:840px;">
+      <h1>Despre</h1>
+      <p class="lead">
+        LittleBites este un site de retete baby-friendly. 
+        Scopul este clar: retete simple, usor de urmat, pentru 6 luni - 3 ani.
+      </p>
+
+      <div class="box">
+        <h2>Ce gasesti aici</h2>
+        <ul>
+          <li>Retete cu ingrediente comune.</li>
+          <li>Tag-uri pentru varsta si tipul mesei.</li>
+          <li>Structura consistenta: ingrediente, pasi, timp, portii.</li>
+        </ul>
+      </div>
+
+      <p style="color:var(--muted); margin-top:14px;">
+        Disclaimer: Acesta este continut informativ. Pentru recomandari medicale, discuta cu medicul sau dieteticianul copilului.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> LittleBites.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
